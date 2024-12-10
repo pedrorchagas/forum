@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+
+    {% if cadastrado %}
+        <h1>Parabéns {{ cadastrado['user'] }}! Você foi cadastrado com sucesso!</h1>
+        <a href="/login">Faça seu login e aproveite tudo!</a>
+
+
+    {% else %}
+        <h1>Faça seu cadastro</h1>
+        <form method="post">
+
+            <label for="user">Usuário: </label>
+            <input type="text", name="user", id="user"> <br>
+            <label for="email">Email: </label>
+            <input type="email", name="email", id="email"> <br>
+            <label for="password">Senha: </label>
+            <input type="password" name="password" id="password"> <br>
+            <label for="password-c">Confirmar senha: </label>
+            <input type="password" name="password-c" id="password-c"> <br>
+            <br><br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    {% endif %}
+    {% endblock %}

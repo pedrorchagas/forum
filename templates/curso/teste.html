@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+    {% block style %}
+        <style>
+            p {
+                color: azure;
+            }
+
+            h1 {
+                color: azure;
+            }
+
+            h2 {
+                color: azure;
+            }
+        </style>
+    {% endblock %}
+
+
+    {% block content %}
+        <h1>Tipos de marcação de texto</h1>
+        <h2>Negrito</h2>
+        <p>Usa a tag <strong> "strong" para deixar os textos negritos </strong></p>
+        <h2>Sublinhadas</h2>
+        <p>Usa a tag <em> "em" para deixar os textos sublinhados</em></p>
+        <h2>Marca texto</h2>
+        <p>usa a tag <mark>"mark" para marcar os textos</mark></p>
+        <h2>Textos deletados</h2>
+        <p>usa a tag <del>"del" para deixar os textos deletados (dar enfâse que o texto foi apagado mas deve ser lido)</del></p>
+        <h2>Textos inseridos</h2>
+        <p>usa a tag <ins>"ins" para deixar os textos incluidos (dar enfâse que o texto foi incluido)</ins></p>
+        <h2>Elevar textos e rebaixar</h1>
+        <p>usa a tag <sup>"sup" para elevar textos</sup> e</p>
+        <p>a tag <sub>"sub" para rebaixar textos</sub></p>
+        <h2>Tag code</h1>
+        <p>usa a tag <code>para escrever códigos</code></p>
+        <h2>Tag pre-formatado</h2>
+        <p>usa a tag <pre>
+            para escrever 
+            i 
+            gual
+            ao código fonte
+        </pre></p>
+        <h2>Citação</h2>
+        <p>Usa a tag <q> "q" para dizer que é uma citação</q></p>
+        <blockquote cite="https://gemini.google.com/app/2f3b4cc702e7f1a1">
+            ou "blockquote" para citações maiores
+        </blockquote>
+        <h2>Abreviações</h2>
+        <p>usa a tag "abbr" para abreviações como: <abbr title="python">PY</abbr></p>
+
+    {% endblock %}
